@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
 import './assets/css/InstallationWizard.css';
 import { Link } from "react-router-dom";
+import { MdOutlineStart } from "react-icons/md";
 const InstallationWizard = () => {
-  const [sendData, setSendData] = useState(false);
 
-  const handleNext = () => {
-    alert('Next button clicked! Proceeding with the Ginger Society installation...');
-  };
 
   return (
     <div className="wizard-container">
@@ -19,14 +15,12 @@ const InstallationWizard = () => {
 
       <p> Click Start to continue.</p>
       <div className="footer">
-      <Link to="/next">
-        <button className="primary-button">Start</button>
-       </Link> 
-        <button className="primary-button" onClick={handleNext} >Cancel</button>
-        <Link to="/">
-        <button className="Secondary-button" >Exit</button>
-        </Link>
-        
+      
+        <Link to="/policy-terms">
+          <button className="primary-button">
+            Start <MdOutlineStart style={{ marginTop: "2px" }} />
+          </button>
+        </Link>  
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from './assets/ginger_icon.png'
 import './App.css'
 import InstallationWizard from './InstallationWizard'

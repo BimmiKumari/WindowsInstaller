@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { open } from "@tauri-apps/plugin-dialog";
 import "./assets/css/Installlocation.css";
 
 const GingerSetup: React.FC = () => {
